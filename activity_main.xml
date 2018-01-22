@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/firstLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context="com.example.android.weatherforcast.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/franc"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:fontFamily="sans-serif"
+        android:text="Choose the city"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#212121"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="26dp"
+        android:background="@android:color/transparent"
+        android:onClick="onClick"
+        android:tag="1"
+        android:text="New Delhi"
+        android:textColor="#212121"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button1"
+        android:layout_alignStart="@+id/button1"
+        android:layout_below="@+id/button1"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        android:onClick="onClick"
+        android:tag="2"
+        android:text="Jaipur"
+        android:textColor="#212121"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_alignStart="@+id/button2"
+        android:layout_below="@+id/button2"
+        android:layout_marginTop="22dp"
+        android:background="@android:color/transparent"
+        android:onClick="onClick"
+        android:tag="3"
+        android:text="Ahemdabad"
+        android:textColor="#212121"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button1"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="35dp"
+        android:background="@android:color/transparent"
+        android:onClick="onClick"
+        android:tag="4"
+        android:text="Srinagar"
+        android:textColor="#212121"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/button4"
+        android:layout_alignRight="@+id/button4"
+        android:layout_alignTop="@+id/button2"
+        android:background="@android:color/transparent"
+        android:onClick="onClick"
+        android:tag="5"
+        android:text="Chennai"
+        android:textColor="#212121"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/button5"
+        android:layout_alignRight="@+id/button5"
+        android:layout_alignTop="@+id/button3"
+        android:background="@android:color/transparent"
+        android:onClick="onClick"
+        android:tag="6"
+        android:text="Mumbai"
+        android:textColor="#212121"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:id="@+id/secondLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/rucksack" />
+
+        <TextView
+            android:id="@+id/nameOfCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/Tempreature"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/Tempreature"
+            android:layout_marginTop="16dp"
+            android:text="new delhi"
+            android:textColor="#212121"
+            android:textSize="24sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/Tempreature"
+            android:layout_alignStart="@+id/Tempreature"
+            android:layout_below="@+id/Tempreature"
+            android:layout_marginTop="13dp"
+            android:text="kuvuyhb"
+            android:textColor="#00897B"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/Tempreature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/nameOfCity"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:background="@android:color/transparent"
+            android:text="14"
+            android:textColor="#00897B"
+            android:textSize="100sp"
+            android:typeface="serif" />
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignBottom="@+id/nameOfCity"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:fontFamily="sans-serif"
+            android:onClick="goBack"
+            android:text="Back"
+            android:textColor="#212121" />
+    </RelativeLayout>
+
+</RelativeLayout>
